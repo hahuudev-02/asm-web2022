@@ -1,9 +1,9 @@
 
 
-export default function FeaturedWork(img, title, year, description, conten) {
+export default function FeaturedWork({id, img, title, year, description, conten}) {
   return `
     <div class="Featured__works-item mt-6">
-        <a href="" class="flex space-x-6">
+        <a href="/workDetail.html?id=${id}" class="flex flex-col md:flex-row space-y-4 md:space-x-6">
             <img src="${img}" alt="" class="rounded-md" />
             <div class="">
                 <h4 class="title text-3xl text-dark font-bold">

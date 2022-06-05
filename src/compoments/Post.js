@@ -1,12 +1,17 @@
-export default function Post(title) {
+export default function Post({title, date, description, conten}, line=true) {
     return `
-        <div class="post bg-white p-5 rounded">
-            <h2 class="text-[26px] font-bold">${title}</h2>
-            <div class="flex justify-between my-4">
-                <span class="text-base">12 Feb 2020</span>
-                <span class="text-base">Design, Pattern</span>
-            </div>
-            <p class="text-base text-[#21243D] leading-6">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class="post bg-white p-2 md:p-5 rounded">
+            <a href="" className="">
+                <h2 class="text-[26px] font-bold">${title}</h2>
+                <div class="flex justify-between my-4">
+                    <span class="text-xl">${date}</span>
+                    <span class="block w-0.5 h-5 bg-gray-700"></span>
+                    <span class="text-xl text-light">${description}</span>
+                </div>
+                <p class="text-base text-[#21243D] leading-6">${conten}</p>        
+            </a>
+
+            ${line && `<span class="block w-ful h-[1px] bg-slate-500 mt-6"></span>`}
         </div>
     `
 }

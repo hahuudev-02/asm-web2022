@@ -7,23 +7,23 @@
         <title>Vite App</title>
     </head>
     <body>
-        <div id="app " class="w-[1200px] mx-auto">
+        <div id="app " class="max-w-screen mx-auto">
             <header id="header">
-                <div id="menu" class="px-[148px]"></div>
+                <div id="menu" ></div>
 
-                <div class="m-148px info flex">
-                    <div class="intro flex-1">
-                        <h1 class="text-[44px] font-bold">Hi, I am John, Creative Technologist</h1>
-                        <p class="text-base my-10">
+                <div class="m-4 md:m-20 lg:m-148px info flex flex-col-reverse md:flex-row">
+                    <div class="intro flex-1 flex flex-col items-center justify-center md:block">
+                        <h1 class="text-[44px] font-bold text-center md:text-left">Hi, I am John, Creative Technologist</h1>
+                        <p class="text-base my-10 text-center md:text-left">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation
                             veniam consequat sunt nostrud amet.
                         </p>
-                        <button
-                            class="w-[208px] h-[47px] bg-[#FF6464] rounded-sm text-xl text-white"
+                        <a href=""
+                            class="w-[208px] h-[47px] leading-[44px] bg-[#FF6464] rounded-sm text-xl text-white text-center"
                         >
                             Download Resume
-                        </button>
+                        </a>
                     </div>
 
                     <div class="image flex">
@@ -34,16 +34,16 @@
 
             <!-- CONTAINER -->
             <div class="container">
-                <div class="Recent-posts px-148px py-10 bg-[#EDF7FA]">
-                    <div class="header h-10 flex items-center justify-between">
+                <div class="Recent-posts px-2 md:px-20 lg:px-148px py-10 bg-[#EDF7FA]">
+                    <div class="header h-10 flex items-center justify-center md:justify-between">
                         <h2 class="text-2xl">Recent posts</h2>
-                        <a href="" class="text-base text-[#00A8CC]">View all</a>
+                        <a href="" class="text-base text-[#00A8CC] hidden md:block">View all</a>
                     </div>
 
-                    <div id="posts-list" class="flex space-x-10 mt-5"></div>
+                    <div id="posts-list" class="flex flex-col md:flex-row space-y-10 md:space-x-10 md:space-y-0 mt-5"></div>
                 </div>
 
-                <div class="Featured-works px-148px">
+                <div class="Featured-works px-2 md:px-20 lg:px-148px">
                     <h2 class="py-4 text-1.5xl text-[#21243D">Featured works</h2>
 
                     <div id="Featured__works-list"></div>
