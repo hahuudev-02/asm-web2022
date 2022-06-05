@@ -1,4 +1,16 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+    display: block;
+    text-align: center;
+}
+
+.menu-screen-mobie {
+    @apply flex flex-col justify-around absolute top-full right-10 min-w-[200px] min-h-[200px] bg-white shadow rounded animate-slideDown;
+}
+
+.menu-link {
+    @apply text-xl hover:text-red-600 relative after:absolute after:bg-yellow-600 after:bottom-0 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+}
