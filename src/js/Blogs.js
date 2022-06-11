@@ -2,7 +2,7 @@ import "../../index.css";
 import Render from "../store/Render";
 
 import { Menu, toggleMenu } from "../compoments/header";
-import Post from "../compoments/Post";
+import Blog from "../compoments/Blog";
 import Footer from "../compoments/Footer";
 
 // Render menu
@@ -35,7 +35,7 @@ const blogs = [
 ];
 
 const htmlsBlogs = blogs.map(blog => `
-    ${Post({...blog})}
+    ${Blog({...blog})}
 `)
 Render("blog-list", htmlsBlogs.join(''));
 

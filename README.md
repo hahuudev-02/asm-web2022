@@ -1,2 +1,4 @@
 # asm-web2022
--author: Nguyễn Hà Hữu
+- Author: Nguyễn Hà Hữu
+- Web2022_ASM
+- Teacher: Lê Trọng Đạt
