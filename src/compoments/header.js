@@ -1,7 +1,7 @@
 export const Menu = `
     <div class="h-[50px] flex justify-between">
         <div class="h-full w-full relative  flex items-center justify-between">
-            <a href="/index.html" class="menu-link">Home</a>  
+            <a href="/index.html" class="menu-link"></a>  
             
             <div class="menu hidden h-full md:flex items-center justify-end md:space-x-12 ">
                 <a href="/work.html" class="menu-link">Works</a>

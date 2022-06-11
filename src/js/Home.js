@@ -1,6 +1,7 @@
 import "../../index.css";
 import Render from "../store/Render";
 import { workList } from "../services/initdata/WorkList";
+import { User } from "../services/initdata/User";
 
 import { Menu, toggleMenu } from "../compoments/header";
 import Post from "../compoments/Post";
@@ -10,6 +11,31 @@ import Footer from "../compoments/Footer";
 // Render menu
 Render("menu", Menu);
 toggleMenu();
+
+// Render User
+const htmlsUser = `
+    <div class="intro flex-1 flex flex-col items-center justify-center md:block">
+        <div class="text-[44px] font-bold text-center md:text-left">
+            <h1 class="">${User.name}</h1>
+            <h2>${User.work}</h2>
+        </div>
+        <p class="text-base my-6 md:my-10 text-center md:text-left md:max-w-[530px]">
+            ${User.description}
+        </p>
+        <a
+            href=""
+            class="w-[208px] h-[47px] leading-[44px] bg-[#FF6464] rounded-sm text-xl text-white text-center mb-13 md:mb-0"
+        >
+            Download Resume
+        </a>
+    </div>
+
+    <div class="image flex md:ml-[115px]">
+        <img src="${User.img}" alt="" class="m-auto" />
+    </div>
+`
+
+Render("user", htmlsUser)
 
 // Render Posts-list
 const posts = [

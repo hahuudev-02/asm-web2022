@@ -6,7 +6,7 @@ export default function FeaturedWork({id, img, title, year, description, conten}
         <a href="/workDetail.html?id=${id}" class="flex flex-col md:flex-row space-y-4 md:space-x-6">
             <img src="${img}" alt="" class="rounded-md" />
             <div class="md:mr-4">
-                <h4 class="title text-3xl text-dark font-bold text-left">
+                <h4 class="title text-2xl md:text-3xl text-dark font-bold text-left">
                     ${title}
                 </h4>
                 <div class="my-4 flex space-x-8 ">
@@ -14,7 +14,7 @@ export default function FeaturedWork({id, img, title, year, description, conten}
                         class="flex items-center justify-center w-[62px] h-[25px] bg-[#142850] text-lg text-white rounded-2xl"
                         >${year}</span
                     >
-                    <span class="text-xl text-light">${description}</span>
+                    <span class="text-base md:text-xl text-light">${description}</span>
                 </div>
                 <p class="text-base text-dark leading-6 text-left">
                     ${conten}
