@@ -1,5 +1,5 @@
 export const Menu = `
-    <div class="px-2 h-11 flex justify-between  md:px-20 lg:px-148px">
+    <div class="h-[50px] flex justify-between">
         <div class="h-full w-full relative  flex items-center justify-between">
             <a href="/index.html" class="menu-link">Home</a>  
             

@@ -7,53 +7,66 @@
         <title>Vite App</title>
     </head>
     <body>
-        <div id="app " class="max-w-screen mx-auto">
-            <header id="header">
-                <div id="menu" ></div>
+        <div id="app " class="font-Heebo">
+            <header id="header" class="max-w-screen mx-auto px-2">
+                <div id="menu"></div>
 
-                <div class="m-4 md:m-20 lg:m-148px info flex flex-col-reverse md:flex-row">
+                <div class="my-4 md:my-20 info flex flex-col-reverse md:flex-row">
                     <div class="intro flex-1 flex flex-col items-center justify-center md:block">
-                        <h1 class="text-[44px] font-bold text-center md:text-left">Hi, I am John, Creative Technologist</h1>
-                        <p class="text-base my-10 text-center md:text-left">
+                        <div class="text-[44px] font-bold text-center md:text-left">
+                            <h1 class="">Hi, I am John,</h1>
+                            <h2>Creative Technologist</h2>
+                        </div>
+                        <p class="text-base my-6 md:my-10 text-center md:text-left">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                             sint. Velit officia consequat duis enim velit mollit. Exercitation
                             veniam consequat sunt nostrud amet.
                         </p>
-                        <a href=""
-                            class="w-[208px] h-[47px] leading-[44px] bg-[#FF6464] rounded-sm text-xl text-white text-center"
+                        <a
+                            href=""
+                            class="w-[208px] h-[47px] leading-[44px] bg-[#FF6464] rounded-sm text-xl text-white text-center mb-13 md:mb-0"
                         >
                             Download Resume
                         </a>
                     </div>
 
-                    <div class="image flex">
+                    <div class="image flex md:ml-[115px]">
                         <img src="img/Ellipse 1.jpg" alt="" class="m-auto" />
                     </div>
                 </div>
             </header>
 
-            <!-- CONTAINER -->
-            <div class="container">
-                <div class="Recent-posts px-2 md:px-20 lg:px-148px py-10 bg-[#EDF7FA]">
-                    <div class="header h-10 flex items-center justify-center md:justify-between">
-                        <h2 class="text-2xl">Recent posts</h2>
-                        <a href="" class="text-base text-[#00A8CC] hidden md:block">View all</a>
-                    </div>
+            <!-- CONTEN -->
+            <div class="conten">
+                <div class="Recent-posts px-2 py-10 bg-[#EDF7FA]">
+                    <div class="max-w-screen mx-auto">
+                        <div
+                            class="header h-10 flex items-center justify-center md:justify-between"
+                        >
+                            <h2 class="text-2xl">Recent posts</h2>
+                            <a href="" class="text-base text-[#00A8CC] hidden md:block">View all</a>
+                        </div>
 
-                    <div id="posts-list" class="flex flex-col md:flex-row space-y-10 md:space-x-10 md:space-y-0 mt-5"></div>
+                        <div
+                            id="posts-list"
+                            class="flex flex-col md:flex-row space-y-10 md:space-x-10 md:space-y-0 mt-5"
+                        ></div>
+                    </div>
                 </div>
 
-                <div class="Featured-works px-2 md:px-20 lg:px-148px">
-                    <h2 class="py-4 text-1.5xl text-[#21243D">Featured works</h2>
+                <div class="Featured-works px-2 max-w-screen mx-auto">
+                    <h2
+                        class="py-4 text-lg md:text-1.5xl text-[#21243D text-center md:text-left font-normal mt-3"
+                    >
+                        Featured works
+                    </h2>
 
                     <div id="Featured__works-list"></div>
                 </div>
             </div>
 
             <!-- FOOTER -->
-            <footer class="footer mt-20" id="footer">
-                
-            </footer>
+            <footer class="footer mt-20 max-w-screen mx-auto" id="footer"></footer>
         </div>
 
         <script type="module" src="./src/js/Home.js"></script>

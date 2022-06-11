@@ -1,9 +1,18 @@
 module.exports = {
-    content: ["./index.html","blog.html", "work.html", "workDetail.html", "./src/**/*.{html,vue,js,ts,jsx,tsx}"],
+    content: [
+        "./index.html",
+        "blog.html",
+        "work.html",
+        "workDetail.html",
+        "./src/**/*.{html,vue,js,ts,jsx,tsx}",
+    ],
     theme: {
         extend: {
+            fontFamily: {
+                Heebo: ['Heebo', 'sans-serif'],
+            },
             maxWidth: {
-                "screen": "1152px",
+                screen: "1152px",
             },
             spacing: {
                 "148px": "148px",

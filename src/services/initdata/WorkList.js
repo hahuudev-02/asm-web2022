@@ -23,4 +23,12 @@ export const workList = [
         description: "Typography",
         conten: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
+    {
+        id: 4,
+        img: "img/Rectangle 40.png",
+        title: "Components",
+        year: "2018",
+        description: "Typography",
+        conten: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    }
 ]
